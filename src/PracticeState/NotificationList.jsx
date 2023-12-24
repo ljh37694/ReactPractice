@@ -15,7 +15,7 @@ class NotificationList extends React.Component {
 
     this.state = {
       notifications: [],
-    }
+    };
   }
 
   componentDidMount() {
@@ -24,18 +24,18 @@ class NotificationList extends React.Component {
       if (notifications.length < reversedNotifications.length) {
         const index = notifications.length;
         notifications.push(reversedNotifications[index]);
-        this.setState({
-          notifications: notifications,
-        });
+        this.setState({ notifications: notifications, });
+      } else {
+        clearInterval(timer);
       }
-    })
+    }, 1000);
   }
 
   render() {
     return (
       <div>
         { this.state.notifications.map((notification) => {
-          return <Notification message={ notification.message } />;
+          return <Notification key={notification.message} message={ notification.message } />;
         })}
       </div>
     );
