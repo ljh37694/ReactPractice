@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
-import ConfirmButton from './MakeConfirmButton/ComfirmButton';
+import LandingPage from './MakeToolbar/LandingPage';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-    <ConfirmButton />
+    <LandingPage />
 );
 
 reportWebVitals();
