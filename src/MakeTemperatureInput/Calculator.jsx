@@ -44,7 +44,7 @@ function Calculator(props) {
     };
 
     const celsius = scale === "f" ? tryConvert(temperature, toCelsius) : temperature;
-    const fahrenheit = scale == "c" ? tryConvert(temperature, toFahrenheit) : temperature;
+    const fahrenheit = scale === "c" ? tryConvert(temperature, toFahrenheit) : temperature;
 
     return (
         <div>
