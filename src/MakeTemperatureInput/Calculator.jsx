@@ -49,13 +49,13 @@ function Calculator(props) {
     return (
         <div>
             <TemperatureInput 
-                scale="c"
-                temperature={celsius}
+                scale="c" 
+                temperature={celsius} 
                 onTemperatureChange={handleCelsiusChange}
             />
             <TemperatureInput 
-                scale="f"
-                temperature={fahrenheit}
+                scale="f" 
+                temperature={fahrenheit} 
                 onTemperatureChange={handleFahrenheitChange}
             />
             <BoilingVerdict celsius={parseFloat(celsius)} />
