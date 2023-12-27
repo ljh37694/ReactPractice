@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 
-import DarkOrLight from './MakeThemeContext/DarkOrLight';
+import Blocks from './PracticeStyledComponents/Blocks';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 root.render(
-    <DarkOrLight />
+    <Blocks />
 );
 
 reportWebVitals();
